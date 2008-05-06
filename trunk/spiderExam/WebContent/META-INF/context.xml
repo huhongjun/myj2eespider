@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="/spiderExam" reloadable="true">
+     <Resource name="jdbc/SpiderExamDS"   
+		   auth="Container"  
+		   type="javax.sql.DataSource"   
+		   username="sakai"   
+		   password="sakai"  
+		   driverClassName="com.mysql.jdbc.Driver"   
+		   url="jdbc:mysql://localhost:3306/sakai"  
+		   maxActive="20"   
+		   maxIdle="30"/> 
+</Context>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+	
+	<beans>
+	
+		<!-- base -->
+		<bean id="layoutManager" class="org.j2eespider.base.model.rules.LayoutManager">
+		</bean>
+		
+		<bean id="menuFilter" class="org.j2eespider.base.model.rules.filter.MenuFilter">
+			<property name="layoutManager">
+				<ref bean="layoutManager"></ref>
+			</property>
+		</bean>
+	
+	</beans>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="XDoclet spiderExam" default="_xdoclet_generation_">
+<property file="xdoclet-build.properties"/>
+<property name="sufix" value="spiderExam"/>
+<property name="xdoclet.basedir" value="D:\ARun\eclipse-jee-3.3.2\plugins\org.j2eespider_1.0.0.M2\templates\\common/temp/lib/xdoclet-1.2.3"/>
+	
+<path id="project.classpath">
+	<pathelement location="D:\ARun\eclipse-jee-3.3.2\plugins\org.j2eespider_1.0.0.M2\templates\\common/temp/lib/servlet-api.jar"/>
+	<fileset dir="WebContent/WEB-INF/lib">
+		<include name="*.jar"/>
+	</fileset>
+</path>
+	
+<path id="xdoclet.classpath">
+	<path refid="project.classpath"/>
+	<fileset dir="${xdoclet.basedir}">
+		<include name="*.jar"/>
+	</fileset>
+</path>
+	
+<target name="_xdoclet_generation_" description="Standard Web">
+	<taskdef name="webdoclet" classname="xdoclet.modules.web.WebDocletTask" classpathref="xdoclet.classpath"/>
+	<webdoclet excludedTags="@version,@author,@todo"  destDir="WebContent/WEB-INF"  verbose="true"  addedTags="@xdoclet-generated at ${TODAY},@copyright The XDoclet Team,@author XDoclet,@version ${version}" >
+		<fileset dir="JavaSource" includes="**/*Action.java"/>
+		<fileset dir="JavaSource" includes="**/*Form.java"/>
+		<strutsconfigxml Version="1.1"  acceptAbstractClasses="true"  destinationFile="struts-config-${sufix}.xml"/>
+		<strutsvalidationxml acceptAbstractClasses="true"  destinationFile="validation-${sufix}.xml"/>
+	</webdoclet>
+</target>
+
+</project>
