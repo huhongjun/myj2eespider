@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+
+	<bean id="hibernateSessions" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configurationClass" value="org.hibernate.cfg.AnnotationConfiguration"/>
+		<property name="configLocation">
+			<value>classpath:hibernate.cfg.xml</value>
+		</property>
+	</bean>
+	
+	<bean id="dao" 
+		class="org.j2eespider.dao.hibernate.BaseDaoImpl" abstract="true">
+		<property name="sessionFactory">
+			<ref bean="hibernateSessions" />
+		</property>
+	</bean>
+
+    <bean id="menu" class="net.sf.navigator.menu.MenuLoader">
+         <property name="menuConfig">
+             <value>/WEB-INF/menu-config.xml</value>
+         </property>
+    </bean>
+         
+</beans>
