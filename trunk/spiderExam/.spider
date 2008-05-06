@@ -1,0 +1,20 @@
+<configSpider>
+  <language>en</language>
+  <appName>spiderExam</appName>
+  <mainPackage>org.j2eespider</mainPackage>
+  <modulesName>
+    <string>m1</string>
+    <string>m2</string>
+  </modulesName>
+  <dbUsername>sakai</dbUsername>
+  <dbPassword>sakai</dbPassword>
+  <dbHost>localhost</dbHost>
+  <dbPort>-1</dbPort>
+  <dbName>sakai</dbName>
+  <techMVC>Struts</techMVC>
+  <techIOC>Spring</techIOC>
+  <techDatabaseLayer>Hibernate</techDatabaseLayer>
+  <templateCodeName>default</templateCodeName>
+  <cruds/>
+  <databaseMapping/>
+</configSpider>
