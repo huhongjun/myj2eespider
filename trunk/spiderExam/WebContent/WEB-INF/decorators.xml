@@ -1,0 +1,17 @@
+
+<decorators defaultdir="/jsp/layout">
+    <excludes>
+        <pattern>/images/*</pattern>
+    </excludes>
+    
+    <decorator name="default" page="spider3/layout.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    
+	    <decorator name="spider3_layout" page="spider3/layout.jsp"/>
+    <decorator name="spider3_login" page="spider3/login.jsp"/>
+	
+    <decorator name="print" page="print.jsp"/>
+    <decorator name="popup" page="popup.jsp"/>
+    
+</decorators>
