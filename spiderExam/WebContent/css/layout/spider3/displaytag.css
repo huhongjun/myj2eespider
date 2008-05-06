@@ -1,0 +1,66 @@
+		
+.displayTagTablePaginacao {
+	font-size: 10px;
+	font-family: verdana, sans-serif;
+	color: #000000;
+	padding: 0px 4px 0px 4px;
+	border-spacing: 0px;
+}
+
+.displayTagTablePaginacao tr.banner {
+	background-color: #dfe6ed; color: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 10px; height: 17px
+}
+
+.displayTagTablePaginacao a {
+	color: #000000;
+}
+
+.displayTagTable {
+	font-size: 12px;
+	font-family: verdana, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	padding: 0px 2px 0px 2px;
+}
+
+.displayTagTable thead tr {
+	background-color: #dfe6ed; color: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 10px; font-weight: bold; height: 17px; text-align:center
+}
+
+.displayTagTable tr.even {
+	background-color: #F5F5F5; color: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 10px; font-weight: normal
+}
+
+.displayTagTable tr.odd {
+	background-color: #FFFFFF; color: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 10px; font-weight: normal
+}
+
+.displayTagTable tr.over {
+	background-color: #bdccdc; color: #000000; FONT-FAMILY: Verdana; FONT-SIZE: 10px; font-weight: normal
+}
+
+.displayTagTable tr.even a {
+    font-size: 10px;
+    font-family: verdana, sans-serif;
+	font-weight: normal;
+}
+
+.displayTagTable tr.odd a {
+    font-size: 10px;
+    font-family: verdana, sans-serif;
+	font-weight: normal;
+}
+
+.displayTagTable a {
+	color: #000000;
+	font-weight: bold;
+}
+
+.displayTagSorted {
+}
+
+.displayTagAscending {
+}
+
+.displayTagDescending {
+}

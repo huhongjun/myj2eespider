@@ -16,7 +16,17 @@
   <techDatabaseLayer>Hibernate</techDatabaseLayer>
   <techDatabaseType>MySQL InnoDB</techDatabaseType>
   <techOthers/>
+  <techLayout>SiteMesh</techLayout>
   <templateCodeName>default</templateCodeName>
+  <siteLayout>
+    <simpleLayout>
+      <name>spider3</name>
+      <firstColor>2c5b8a</firstColor>
+      <secondColor>dfe6ed</secondColor>
+      <thirdColor>bdccdc</thirdColor>
+      <textColor>43709c</textColor>
+    </simpleLayout>
+  </siteLayout>
   <cruds/>
   <databaseMapping/>
 </configSpider>
